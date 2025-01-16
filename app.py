@@ -3,6 +3,8 @@ import os
 os.environ["CUDA_DEVICE_ORDER"]="PCI_BUS_ID"  # Arrange GPU devices starting from 0
 os.environ["CUDA_VISIBLE_DEVICES"]= "1"  # Set the GPU 1 to use
 
+####위 코드는 GPU를 사용하며 CUDA 및 cudnn 세팅이 완료된 환경에서 사용. 사용할 gpu device 번호를 확인 후 맞춰서 입력하기
+
 import pandas as pd
 
 data = pd.read_csv('gpascore.csv') #데이터분석 다루는 라이브러리 pandas / 같은 폴더에 든 파일이면 경로 지정 없이 이름만 ㄱㄱ
